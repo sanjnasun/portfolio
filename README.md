@@ -5,7 +5,7 @@ My personal website built using React and Material-UI. This site showcases my pr
 ## Demo
 
 
-[Live Demo][(https://your-website-url.com](https://sanjnasun.github.io/portfolio/))
+[Live Demo][(https://sanjnasun.github.io/portfolio/]))
 
 ## Technologies Used
 
