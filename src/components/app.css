@@ -1,0 +1,13 @@
+.backgroundIMG {
+    position: relative;
+    width: 100%;
+    min-height: calc(100vh);
+    background-image: url('b2.png'), url('b1.png'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  .header {
+    position: relative;
+    z-index: 1; 
+  }
