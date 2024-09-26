@@ -1,43 +1,61 @@
 import React from "react";
-import { Typography, Container, Box } from "@mui/material";
+import { createTheme, ThemeProvider, Typography, Container, Box } from "@mui/material";
 import NewCard from "./exCards";
 import "./projects.css";
 
 
+
+const theme = createTheme({
+    typography: {
+      fontFamily: [
+        '"Schibsted Grotesk"',
+        'sans-serif',
+      ].join(','),
+    },
+  });
+
+
+  const experiences = [
+    {
+        name: 'Sharada Research Group', 
+        description: 'Collaborated with two PhD candidates and an interdisciplinary team to normalize scaling and illustrate Daubechies wavelets for matrix completion algorithms, enhancing research methodologies and outcomes.',
+        stack: 'Undergraduate Student Researcher'
+    },
+    {
+        name: 'LabCorp', 
+        description: 'Served as a Software Engineering Intern, focusing on client-side applications. Developed a full-stack project using Angular, TypeScript, Spring Boot, Java, S3, AWS, and PostgreSQL. Led collaborative initiatives with fellow interns, employing CI/CD methodologies and utilizing tools such as Jira, Bitbucket, and Jenkins for efficient project management.',
+        stack: 'Software Engineer'
+    },
+    {
+        name: 'Annenberg Media', 
+        description: 'Functioned as a Software Engineer at USC Annenberg, where I designed and collaborated with a diverse team of over 30 students and colleagues. Played a key role in developing and updating the Annenberg website and contributed to an AI safety project aimed at enhancing campus security for students.',
+        stack: 'Software Engineer'
+    },
+    {
+        name: 'SpatialSC', 
+        description: 'Contributed as a developer on a spatial development team at USC, collaborating with five members using agile methodologies. Developed a photo editing app for Meta Quest 3, leveraging skills in C#, Unity, MySQL, and C++ to create an immersive user experience.',
+        stack: 'AR/VR Developer'
+    }
+];
+
+
 const Experience = () => {
     return (
-        <Box sx={{ marginTop: '10%', marginBottom: '10%' }} className='belowClass'>
+        <Box className="header-container" sx={{marginTop: '10%'}}>
             <Container maxWidth="lg">
-                <Typography variant='h1' component='h2' gutterBottom sx={{marginBottom: '10%'}} className="mainTitle">
-                <div className='mainTitle'>Experience</div>
+            <ThemeProvider theme={theme}>
+                <Typography variant='h1' component='h1' className="mainTitle" gutterBottom >
+                    Experience
                 </Typography>
-                
+               </ThemeProvider>
+                {experiences.map((exp) => (
                 <NewCard 
-                    maxwidth={600}
-                    maxheight={300}
-                    name={'LabCorp '}
-                    description={'Software engineering itern, focusing on client-side applications. Developed full stack project using Angular, Typescript, Springboot, Java, S3 Bucket, Amazon AWS service, and POSTGRE SQL. Collaborated and spearheaded projects with other interns, used CI/CD methodology for DevOps, as well as Jira, BitBucket, and Jenkins. '}
-                    stack={'Software Engineering Intern'}
+                    name={exp.name}
+                    description={exp.description}
+                    stack={exp.stack}
                 />
-                
-                <br/>
-                <br/>
-                <NewCard 
-                    maxwidth={600}
-                    maxheight={300}
-                    name={'Annenberg Media '}
-                    description={'I worked as a software engineer for USC Annenberg, where I desinged, collaborated, with over 30+ students and co-workers. Developed and updated Annenberg Website, as well AI safety project for the Department of Public Safety at USC, making campus safer students.'}
-                    stack={'Software Engineer'}
-                />
-                <br/>
-                <br/>
-                <NewCard 
-                    maxwidth={600}
-                    maxheight={300}
-                    name={'SpatialSc '}
-                    description={'Collaborated as a developer on a spatial development team at USC. Worked with 5 other members using agile methology to develop photo editing app for Meta Quest 3. Used C#, Unity, MySQL, and C++'}
-                    stack={'AR/VR Developer'}
-                />
+            ))}
+            
             </Container>
         </Box>
     );

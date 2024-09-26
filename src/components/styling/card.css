@@ -1,0 +1,21 @@
+.cardPaper {
+    display: flex;
+    flex-direction: column;   
+    height: 390px;
+    width: 500px;
+    overflow: hidden;
+    background-color: black; 
+    background-image: none;
+    color: white;
+}
+
+.imgSize {
+    width: 100%;        
+    height: 100%;       
+}
+
+
+.overlayTitle{
+    background-color: black;
+    color: white;
+}

@@ -1,88 +1,41 @@
-@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap'); 
-@import url('https://fonts.googleapis.com/css2?family=Spline+Sans+Mono:ital,wght@0,300..700;1,300..700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&display=swap");
 
 
-.cardsZZ:hover
-{
-    transform: scale(1.01);
-}
-
-#info
-{
-    z-index: 2;
-}
-.contact-container {
-    background-color: black;
-    color: white;
-    
-}
-
-.card-link {
-    text-decoration: none; 
-  }
-  
-
-  
-
-.itemHolder
-{
+.header-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-}
-
-.ball1
-{
-    position: absolute;
-    margin-left: -8%;
-    margin-top: -10%;
-    z-index: 1;
+    min-height: 100vh; 
 }
 
 
-.ball2
-{
-    position: absolute;
-    margin-left: 65%;
-    margin-top:5%;
-    z-index: 1;
+.exCard{
+    border-color: black;
+    margin: 5%;
 }
 
 
-.ball3
-{
-    position: absolute;
-    margin-left: 60%;
-    margin-top:-20%;
-    z-index: 1;
-}
-
-
+ 
 .mainTitle {
-    font-family: "Yeseva One", monospace;
-    font-optical-sizing: auto;
+    font-family: 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+
 }
 
 .belowTitle {
-    font-family: "Spline Sans Mono", monospace;
-    font-optical-sizing: auto;
+    font-family: "Manrope", sans-serif;
+}
+
+
+.aboutTitle {
+    color:white;
 }
 
 
 
-#mainTitle
-{
-    font-family: "Yeseva One", monospace;
-    font-optical-sizing: auto;
-}
-
-#belowTitle
-{
-    font-family: "Spline Sans Mono", monospace;
-    font-optical-sizing: auto;
-}
-
-
-
-  
+ 
   
   .icon:hover {
     transform: scale(1.2); 

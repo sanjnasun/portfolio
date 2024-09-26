@@ -1,0 +1,7 @@
+.projectDisplay
+{
+    display: 'flex';
+    gap: 15;
+    flex-wrap: 'wrap';
+    margin-top: '5%';
+}

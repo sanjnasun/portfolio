@@ -4,7 +4,7 @@ import './projects.css';
 
 const NewCard = ({ name, description, stack }) => {
     return (
-        <Card sx={{ borderRadius: '3%', boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.4)' }} className='exCard' variant="outlined">
+        <Card variant="outlined" className="exCard" >
             <CardContent>
                 <Typography variant='h3' component='div' sx={{ marginBottom: '0.5rem' }}>
                 <div className='belowTitle'>  {name} </div>

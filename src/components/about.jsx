@@ -1,44 +1,66 @@
 import React from "react";
-import { Typography, Box, Grid } from "@mui/material";
+import { createTheme, ThemeProvider, Typography, Container, Box, Grid } from "@mui/material";
 import aapa from '../images/aapa.png';
 import "./projects.css";
 
 
+
+
+
+const theme = createTheme({
+  typography: {
+    fontFamily: [
+      '"Schibsted Grotesk"',
+      'sans-serif',
+    ].join(','),
+  },
+});
+
+
+
+
+const belowTheme = createTheme({
+  typography: {
+    fontFamily: [
+      '"Manrope"',
+      'sans-serif',
+    ].join(','),
+  },
+});
+
+
+
+
+
 const About = () => {
   return (
-    <Box id='about'
-      sx={{
-        maxWidth: 'lg',
-        height: '100%',
-        marginTop: '10%',
-        marginLeft: '12%',
-        marginBottom: '3%',
-      }}
-    >
-      <Typography variant='h1' component='h2' className="mainTitle">
-       <div className='mainTitle'>About</div>
-      </Typography>
-      <br></br>
-      <br></br>
-      <Grid container spacing={2}>
-        <Grid item xs={12} md={5} sx={{marginRight:'8%'}} >
-          <Typography variant='h5' component='h5' className='belowClass'>
-          <div className='belowTitle'> Hi, I'm Sanjna Sunil! I'm a junior at the University of Southern California,
-            studying Computer Engineering and Computer Science. My academic passions revolve around AI/ML, 
-            dynamic client-side interfaces, and the intersection of business and technology. 
-            Beyond the classroom, I actively engage in the USC community, contributing to the 
-            USC Women in Computing, Society of Women Engineers, and Spatial Computing Club. </div>
-             
-          </Typography>
-        </Grid>
+    <Box className="header-container" sx={{ py: 4 , marginTop: '5%'}}>
+      <Container maxWidth="lg">
+      
+      <ThemeProvider theme={theme}>
+        <Typography variant='h1' component='h1'className="mainTitle" gutterBottom >
+          About
+        </Typography>
+      </ThemeProvider>
 
-        <Grid item xs={12} md={6}>
-          <img src={aapa} alt='aapa riding in the sky'/>    
+        <Grid container spacing={4} alignItems="center">
+          <Grid item xs={12} md={6} sx={{ padding: { xs: "16px", md: "32px" } }}>
+          <ThemeProvider theme={belowTheme}>
+            <Typography variant='h4' gutterBottom className="aboutTitle">
+              Hi! I'm Sanjna, a third year Computer Science student at the University of Southern California. 
+              My academic interests revolve around full-stack web development, AI/ML, and large scale algorithm and low-latency design. Beyond
+              what I study, I'm involved in Society of Women Engineers at USC, rock-climbing, skateboarding, and I love to run!
+            </Typography>
+          </ThemeProvider>
+          
+          </Grid>
+
+          <Grid item xs={12} md={6}>
+            <img src={aapa} alt="AAPA" style={{ width: '100%', height: 'auto', borderRadius: '8px' }} />
+          </Grid>
         </Grid>
-      </Grid>
-      <br></br>
+      </Container>
     </Box>
-    
   );
 }
 
