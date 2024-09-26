@@ -1,23 +1,16 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.5b59501c.css",
-    "main.js": "/portfolio/static/js/main.a363e00d.js",
-    "static/media/b1.png": "/portfolio/static/media/b1.c85da1f11bcf7f034a28.png",
-    "static/media/b2.png": "/portfolio/static/media/b2.b9e74a7fe126fcb40f06.png",
-    "static/media/annenberg.png": "/portfolio/static/media/annenberg.e355640168bcc3b909d1.png",
+    "main.css": "/portfolio/static/css/main.911b8a41.css",
+    "main.js": "/portfolio/static/js/main.442b041a.js",
+    "static/media/blueBack.png": "/portfolio/static/media/blueBack.d2268f77b158774a74d4.png",
+    "static/media/pinkBack.png": "/portfolio/static/media/pinkBack.f66d397fac46734f35cb.png",
     "static/media/aapa.png": "/portfolio/static/media/aapa.dc39d5283447d2662499.png",
-    "static/media/scholes.png": "/portfolio/static/media/scholes.6ab243b2907eff26c1ca.png",
-    "static/media/heartbeats.png": "/portfolio/static/media/heartbeats.fd9857f7c463e9249ec3.png",
-    "static/media/react.png": "/portfolio/static/media/react.28305f1ace990eb44b29.png",
-    "static/media/ball2.png": "/portfolio/static/media/ball2.4d1fcf6949add25a1413.png",
-    "static/media/ball3.png": "/portfolio/static/media/ball3.5043bcbc81a3d3b1fa54.png",
-    "static/media/ball1.png": "/portfolio/static/media/ball1.2f7a6019b2df6d52b51b.png",
     "index.html": "/portfolio/index.html",
-    "main.5b59501c.css.map": "/portfolio/static/css/main.5b59501c.css.map",
-    "main.a363e00d.js.map": "/portfolio/static/js/main.a363e00d.js.map"
+    "main.911b8a41.css.map": "/portfolio/static/css/main.911b8a41.css.map",
+    "main.442b041a.js.map": "/portfolio/static/js/main.442b041a.js.map"
   },
   "entrypoints": [
-    "static/css/main.5b59501c.css",
-    "static/js/main.a363e00d.js"
+    "static/css/main.911b8a41.css",
+    "static/js/main.442b041a.js"
   ]
 }
