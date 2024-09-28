@@ -3,8 +3,7 @@
 ## Link
 https://sanjnasun.github.io/portfolio/
 
-🌟 Welcome to My Personal Website! 🌟
-
+🌟 Welcome to My Personal Website! 🌟 
 Hello there! 👋 I’m a passionate Computer Science student at the University of Southern California (USC), and this is my personal website where you can learn all about me, my projects, and my experiences!
 
 🚀 About Me
