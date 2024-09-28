@@ -9,10 +9,43 @@ import "./projects.css";
 
 const theme = createTheme({
   typography: {
-    fontFamily: [
-      '"Schibsted Grotesk"',
-      'sans-serif',
-    ].join(','),
+      fontFamily: [
+          '"Schibsted Grotesk"',
+          'sans-serif',
+      ].join(','),
+      h1: {
+          '@media (min-width:300px)': {
+              fontSize: '3rem',
+          },
+          '@media (min-width:600px)': {
+              fontSize: '5rem',
+          },
+          '@media (min-width:900px)': {
+              fontSize: '7rem',
+          },
+      },
+      h2: {
+          '@media (min-width:300px)': {
+              fontSize: '1,5rem',
+          },
+          '@media (min-width:600px)': {
+              fontSize: '2rem',
+          },
+          '@media (min-width:900px)': {
+              fontSize: '2.5rem',
+          },
+      },
+      h3: {
+          '@media (min-width:300px)': {
+              fontSize: '1.2rem',
+          },
+          '@media (min-width:600px)': {
+              fontSize: '1.5rem',
+          },
+          '@media (min-width:900px)': {
+              fontSize: '2.4rem',
+          },
+      },
   },
 });
 
@@ -25,6 +58,51 @@ const belowTheme = createTheme({
       '"Manrope"',
       'sans-serif',
     ].join(','),
+    h1: {
+      '@media (min-width:300px)': {
+          fontSize: '2rem',
+      },
+      '@media (min-width:600px)': {
+          fontSize: '5rem',
+      },
+      '@media (min-width:900px)': {
+          fontSize: '7rem',
+      },
+  },
+  h2: {
+      '@media (min-width:300px)': {
+          fontSize: '1,5rem',
+      },
+      '@media (min-width:600px)': {
+          fontSize: '2rem',
+      },
+      '@media (min-width:900px)': {
+          fontSize: '2.5rem',
+      },
+  },
+  h3: {
+      '@media (min-width:300px)': {
+          fontSize: '1.2rem',
+      },
+      '@media (min-width:600px)': {
+          fontSize: '1.5rem',
+      },
+      '@media (min-width:900px)': {
+          fontSize: '2.4rem',
+      },
+  },
+
+  h4: {
+    '@media (min-width:300px)': {
+        fontSize: '1.2rem',
+    },
+    '@media (min-width:600px)': {
+        fontSize: '1.5rem',
+    },
+    '@media (min-width:900px)': {
+        fontSize: '2.4rem',
+    },
+},
   },
 });
 
@@ -56,7 +134,7 @@ const About = () => {
           </Grid>
 
           <Grid item xs={12} md={6}>
-            <img src={aapa} alt="AAPA" style={{ width: '100%', height: 'auto', borderRadius: '8px' }} />
+            <img src={aapa} alt="AAPA" className="aapa" style={{ width: '100%', height: 'auto', borderRadius: '8px' }} />
           </Grid>
         </Grid>
       </Container>

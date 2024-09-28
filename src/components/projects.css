@@ -42,3 +42,39 @@
     transition: 0.4s;
 }
   
+
+
+  
+@media (max-width: 1200px) {
+    .mainTitle {
+      font-size: 3rem; 
+    }
+  }
+  
+  @media (max-width: 900px) {
+    .mainTitle {
+      font-size: 2.5rem; 
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .mainTitle {
+      font-size: 2rem; 
+    }
+  }
+
+
+
+
+
+@media (max-width: 768px) {
+    .aapa {
+        max-width: 90%; 
+    }
+}
+
+@media (max-width: 480px) {
+    .aapa {
+        max-width: 95%; 
+    }
+}
