@@ -50,6 +50,11 @@ const theme = createTheme({
 
   const experiences = [
     {
+        name: 'Viterbi School of Engineering', 
+        description: 'Served as a undergraduate TA for ITP 104-Intro to Web Development. Held weekly office hours to support 80+ students, designed and graded coursework.',
+        stack: 'Undergraduate Teaching Assistant'
+    },
+    {
         name: 'Sharada Research Group', 
         description: 'Collaborated with two PhD candidates and an interdisciplinary team to normalize scaling and illustrate Daubechies wavelets for matrix completion algorithms, enhancing research methodologies and outcomes.',
         stack: 'Undergraduate Student Researcher'
@@ -65,7 +70,7 @@ const theme = createTheme({
         stack: 'Software Engineer'
     },
     {
-        name: 'SpatialSC', 
+        name: 'SpatialSc', 
         description: 'Contributed as a developer on a spatial development team at USC, collaborating with five members using agile methodologies. Developed a photo editing app for Meta Quest 3, leveraging skills in C#, Unity, MySQL, and C++ to create an immersive user experience.',
         stack: 'AR/VR Developer'
     }
